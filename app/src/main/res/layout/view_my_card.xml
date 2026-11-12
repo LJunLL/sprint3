@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenido de MyCard. <merge> evita un nivel extra de anidación:
+     las vistas se añaden directamente dentro de la MaterialCardView. -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="com.google.android.material.card.MaterialCardView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_m">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/card_image"
+            android:layout_height="@dimen/card_image"
+            android:layout_marginEnd="@dimen/space_m"
+            android:background="@drawable/bg_card_image"
+            android:importantForAccessibility="no"
+            android:padding="@dimen/space_s"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            tools:src="@drawable/img_glove_red"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Título" />
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xs"
+                android:textColor="@color/velada_gold"
+                android:textSize="@dimen/text_body"
+                tools:text="Subtítulo" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                style="@style/Velada.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_s"
+                tools:text="Descripción de la card" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

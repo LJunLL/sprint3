@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Velada 2027</string>
+
+    <!-- HomeActivity -->
+    <string name="home_image_desc">Ilustración de un ring de boxeo iluminado por focos</string>
+    <string name="home_badge">EVENTO 2027</string>
+    <string name="home_title">La Velada del Año 2027</string>
+    <string name="home_subtitle">Los mejores combates entre creadores de contenido, en directo y en un solo evento.</string>
+    <string name="home_btn_tickets">Comprar entradas</string>
+    <string name="home_btn_detail">Ver combates</string>
+    <string name="toast_not_implemented">Todavía no está implementado</string>
+
+    <!-- DetailActivity -->
+    <string name="detail_title">Cartelera</string>
+    <string name="detail_header">Combates confirmados</string>
+
+    <string name="fight1_title">Combate estelar</string>
+    <string name="fight1_subtitle">Peso pesado · 3 asaltos</string>
+    <string name="fight1_desc">El combate que cierra la noche. Dos rivales con cuentas pendientes se ven las caras en el ring principal.</string>
+    <string name="fight1_image_desc">Guantes de boxeo rojos</string>
+
+    <string name="fight2_title">Combate de revancha</string>
+    <string name="fight2_subtitle">Peso medio · 3 asaltos</string>
+    <string name="fight2_desc">Un año después, el perdedor de la edición anterior busca recuperar su orgullo.</string>
+    <string name="fight2_image_desc">Guantes de boxeo azules</string>
+
+    <string name="fight3_title">Combate sorpresa</string>
+    <string name="fight3_subtitle">Por anunciar</string>
+    <string name="fight3_desc">Los participantes se revelarán la misma noche del evento.</string>
+</resources>

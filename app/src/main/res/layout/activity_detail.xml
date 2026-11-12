@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/velada_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/llCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_m">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            style="@style/Velada.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/space_m"
+            android:text="@string/detail_header" />
+
+        <!-- MyCard configurada desde XML (atributos propios en attrs.xml).
+             La imagen se añade por código en DetailActivity. -->
+        <com.herobil.sprint3.MyCard
+            android:id="@+id/cardFight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcTitle="@string/fight1_title"
+            app:mcSubtitle="@string/fight1_subtitle"
+            app:mcDescription="@string/fight1_desc" />
+
+        <com.herobil.sprint3.MyCard
+            android:id="@+id/cardFight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            app:mcTitle="@string/fight2_title"
+            app:mcSubtitle="@string/fight2_subtitle"
+            app:mcDescription="@string/fight2_desc" />
+
+        <!-- La tercera card se crea 100% por código para demostrar la flexibilidad -->
+
+    </LinearLayout>
+</ScrollView>

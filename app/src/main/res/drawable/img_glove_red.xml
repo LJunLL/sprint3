@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ilustración vectorial propia: guante de boxeo -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path android:fillColor="#FFE53935"
+        android:pathData="M30,20 C30,10 40,6 52,6 C70,6 80,16 80,34 L80,52 C80,62 74,68 64,68 L36,68 C26,68 20,60 20,50 L20,40 C20,34 24,30 30,30 Z" />
+    <path android:fillColor="#33000000"
+        android:pathData="M20,40 C20,34 24,30 30,30 L44,30 C48,30 50,34 50,38 C50,42 48,46 44,46 L20,46 Z" />
+    <path android:fillColor="#FFFFFFFF"
+        android:pathData="M32,68 L68,68 L68,86 C68,88 66,90 64,90 L36,90 C34,90 32,88 32,86 Z" />
+    <path android:strokeColor="#FFE53935" android:strokeWidth="3" android:pathData="M32,76 L68,76" />
+</vector>

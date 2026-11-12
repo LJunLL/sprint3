@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shape: degradado de fondo de la pantalla -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="#FF2A1F05"
+        android:centerColor="@color/velada_bg"
+        android:endColor="@color/velada_bg" />
+</shape>

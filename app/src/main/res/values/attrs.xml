@@ -1,0 +1,10 @@
+<resources>
+    <!-- Atributos propios de MyCard, usables desde XML con app:mcTitle, etc. -->
+    <declare-styleable name="MyCard">
+        <attr name="mcTitle" format="string" />
+        <attr name="mcSubtitle" format="string" />
+        <attr name="mcDescription" format="string" />
+        <attr name="mcImage" format="reference" />
+        <attr name="mcImageDescription" format="string" />
+    </declare-styleable>
+</resources>

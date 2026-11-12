@@ -1,0 +1,14 @@
+<resources>
+    <!-- Paleta: fondo oscuro + acento dorado. Contraste texto/fondo >= 4.5:1 (WCAG AA) -->
+    <color name="velada_bg">#FF121212</color>
+    <color name="velada_surface">#FF1E1E24</color>
+    <color name="velada_gold">#FFFFC93C</color>
+    <color name="velada_gold_dark">#FFC79100</color>
+    <color name="velada_red">#FFE53935</color>
+    <color name="velada_blue">#FF1E88E5</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFC7C7CF</color>
+    <color name="text_on_gold">#FF121212</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

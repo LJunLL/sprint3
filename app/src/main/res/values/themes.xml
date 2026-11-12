@@ -1,0 +1,29 @@
+<resources>
+    <style name="Theme.Sprint3" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/velada_gold</item>
+        <item name="colorOnPrimary">@color/text_on_gold</item>
+        <item name="colorSecondary">@color/velada_gold_dark</item>
+        <item name="android:colorBackground">@color/velada_bg</item>
+        <item name="colorSurface">@color/velada_surface</item>
+        <item name="android:statusBarColor">@color/velada_bg</item>
+        <item name="android:navigationBarColor">@color/velada_bg</item>
+    </style>
+
+    <!-- Estilos reutilizables (evitan repetir atributos en los layouts) -->
+    <style name="Velada.Title" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Velada.Subtitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">@dimen/text_subtitle</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="Velada.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

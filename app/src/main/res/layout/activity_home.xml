@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView: si el usuario usa letra grande o gira la pantalla, el contenido no se corta -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_l">
+
+        <!-- Imagen -->
+        <ImageView
+            android:id="@+id/ivHero"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="@dimen/space_l"
+            android:background="@drawable/bg_image_frame"
+            android:contentDescription="@string/home_image_desc"
+            android:padding="@dimen/space_m"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_ring" />
+
+        <!-- Etiqueta -->
+        <TextView
+            android:id="@+id/tvBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_l"
+            android:background="@drawable/bg_badge"
+            android:letterSpacing="0.1"
+            android:paddingHorizontal="@dimen/space_m"
+            android:paddingVertical="@dimen/space_xs"
+            android:text="@string/home_badge"
+            android:textColor="@color/velada_gold"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Velada.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_m"
+            android:gravity="center"
+            android:text="@string/home_title" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            style="@style/Velada.Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:gravity="center"
+            android:text="@string/home_subtitle" />
+
+        <!-- Espacio flexible: empuja los botones hacia abajo (zona del pulgar) -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="@dimen/space_xl" />
+
+        <!-- Botón principal (acción principal de la pantalla) -->
+        <Button
+            android:id="@+id/btnTickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_primary"
+            android:minHeight="@dimen/touch_target"
+            android:text="@string/home_btn_tickets"
+            android:textAllCaps="false"
+            android:textColor="@color/text_on_gold"
+            android:textSize="@dimen/text_button"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <!-- Botón secundario: menos peso visual que el principal -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDetail"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_s"
+            android:minHeight="@dimen/touch_target"
+            android:text="@string/home_btn_detail"
+            android:textColor="@color/velada_gold"
+            android:textSize="@dimen/text_button"
+            app:cornerRadius="@dimen/corner_m"
+            app:strokeColor="@color/velada_gold" />
+
+    </LinearLayout>
+</ScrollView>
